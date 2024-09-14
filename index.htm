@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nature 3D Effect</title>
+	<link rel="stylesheet" href="/CSS/main.css">
+	<script src="/JS/rain.js" defer></script>
+	<script src="/JS/app.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="logo"></div>
+
+	<section class="layers">
+		<div class="layers__container">
+			<div class="layers__item layer-1" style="background-image: url(' https://cache.desktopnexus.com/thumbseg/868/868034-bigthumbnail.jpg');"></div>
+			<div class="layers__item layer-2" style="background-image: url('https://img.freepik.com/premium-photo/greenhouse-with-bunch-green-plants-it_1191492-27693.jpg?w=740');"></div>
+			<div class="layers__item layer-3">
+				<div class="hero-content">
+					 Discover the Wonders of the OF <br><h> <span style="color: white;"> <br> <b style="font-size: 75px;">VIRTUAL HERBAL
+						GARDEN</b> </span></h><br>
+					<div class="hero-content__text">
+					<center style="font-size:large; text-shadow: 0.5px 1px aqua ;">Immerse yourself in an interactive, educational, and visually stunning experience <br> with our expansive collection of herbal plants.</center>
+					</div>
+					<button class="button"> <a href="/HTML/1welcome.htm" style="color: white;"><h2>Log In</h2></a> </button>
+					<button class="button"> <a href="/HTML/3navigation bar.htm" style="color: white;"> <h2>Start Exploring</h2></a> </button>
+					
+				</div>
+			</div>
+			<div class="layers__item layer-4">
+				<canvas class="rain"></canvas>
+			</div>
+			<div class="layers__item layer-5" style="background-image: url('/PHOTOES/layer-5.png');"></div>
+			<div class="layers__item layer-6" style="background-image: url('/PHOTOES/layer-6.png');"></div>
+		</div>
+	</section>
+</body>
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	const firebaseConfig = {
+	  apiKey: "AIzaSyC1QUCCOC2Mk3J5HD2eZdtro5CUoBvVEn4",
+	  authDomain: "plant-sih-herbal.firebaseapp.com",
+	  projectId: "plant-sih-herbal",
+	  storageBucket: "plant-sih-herbal.appspot.com",
+	  messagingSenderId: "375382992319",
+	  appId: "1:375382992319:web:9321c78d27a0d5950a2d0a"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+  </script>
+
+</html>
